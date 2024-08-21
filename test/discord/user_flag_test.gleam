@@ -3,7 +3,7 @@ import gleeunit/should
 
 pub fn from_int_single_flag_test() {
   // Given
-  let staff_val = 0b1
+  let staff_val = user_flag.staff_val
   let expected = [user_flag.Staff]
 
   // When
@@ -37,7 +37,7 @@ pub fn from_int_multi_flag_test() {
 pub fn to_int_single_flag_test() {
   // Given
   let flag = user_flag.Staff
-  let expected = 0b1
+  let expected = user_flag.staff_val
 
   // When
   let val = user_flag.to_int([flag])
