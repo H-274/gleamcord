@@ -12,9 +12,7 @@ by providing ready-to-use entities to recieve and send data to the API. It also 
 > [!IMPORTANT]
 > This is a library, not a framework. This does not include a web server/framework to recieve or send requests to and from the Discord API.
 > This is intended to allow flexibility when it comes to choosing the best option for your use case. 
-> This also helps to minimize the number of dependencies in this library.
->
-> Examples are made with the wonderful [Wisp Framework](https://gleam-wisp.github.io/wisp/) and deal with Discord's HTTP API
+> This also helps to minimize the number of dependencies in the library.
 
 ```sh
 gleam add gleamcord
