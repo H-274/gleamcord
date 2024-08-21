@@ -67,7 +67,7 @@ pub fn to_int_multi_flag_test() {
   val |> should.equal(expected)
 }
 
-pub fn from_int_to_int_equals_test() {
+pub fn from_int_equals_to_int_test() {
   // Given
   let expected_flag_values =
     user_flag.staff_val
@@ -82,7 +82,7 @@ pub fn from_int_to_int_equals_test() {
   result_values |> should.equal(expected_flag_values)
 }
 
-pub fn to_int_from_int_equals_test() {
+pub fn to_int_equals_from_int_test() {
   // Given
   let expected_flags = [
     user_flag.ActiveDeveloper,
