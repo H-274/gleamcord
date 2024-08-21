@@ -31,8 +31,8 @@ pub fn from_int_multi_flag_test() {
   let flags = user_flag.from_int(flag_values)
 
   // Then
-  flags
-  |> list.all(fn(flag) { list.contains(expected, flag) })
+  expected
+  |> list.all(fn(expected_flag) { flags |> list.contains(expected_flag) })
   |> should.be_true
 }
 
@@ -95,7 +95,7 @@ pub fn to_int_from_int_equals_test() {
   let result_flags = user_flag.from_int(flag_values)
 
   // Then
-  result_flags
-  |> list.all(fn(flag) { list.contains(flags, flag) })
+  flags
+  |> list.all(fn(expected_flag) { result_flags |> list.contains(expected_flag) })
   |> should.be_true
 }
