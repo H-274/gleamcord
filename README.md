@@ -10,9 +10,9 @@ This library aims to simplify communication with the [Discord API](https://disco
 by providing ready-to-use entities to recieve and send data to the API. It also comes with some extra useful type for convenience.
 
 > [!IMPORTANT]
-> This library does not include a web server/framework to recieve or send requests to and from the Discord API.
+> This is a library, not a framework. This does not include a web server/framework to recieve or send requests to and from the Discord API.
 > This is intended to allow flexibility when it comes to choosing the best option for your use case. 
-> This is also to minimize the number of dependencies in this library.
+> This also helps to minimize the number of dependencies in this library.
 >
 > Examples are made with the wonderful [Wisp Framework](https://gleam-wisp.github.io/wisp/) and deal with Discord's HTTP API
 
