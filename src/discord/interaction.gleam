@@ -1,5 +1,5 @@
 import discord/channel.{type Channel}
-import discord/entitlements.{type Entitlement}
+import discord/entitlement.{type Entitlement}
 import discord/guild.{type Guild}
 import discord/integration_type.{type IntegrationType}
 import discord/interaction_context_type.{type InteractionContextType}
