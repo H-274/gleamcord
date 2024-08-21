@@ -1,1 +1,7 @@
-pub type InteractionType
+pub type InteractionType {
+  Ping
+  ApplicationCommand
+  MessageComponent
+  ApplicationCommandAutocomplete
+  ModalSubmit
+}

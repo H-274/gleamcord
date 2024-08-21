@@ -1,1 +1,5 @@
-pub type InteractionContextType
+pub type InteractionContextType {
+  Guild
+  BotDm
+  PrivateChannel
+}

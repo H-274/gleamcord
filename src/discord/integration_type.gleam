@@ -1,1 +1,4 @@
-pub type IntegrationType
+pub type IntegrationType {
+  GuildInstall
+  UserInstall
+}
