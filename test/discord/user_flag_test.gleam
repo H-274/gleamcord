@@ -69,33 +69,33 @@ pub fn to_int_multi_flag_test() {
 
 pub fn from_int_to_int_equals_test() {
   // Given
-  let flag_values =
+  let expected_flag_values =
     user_flag.staff_val
     + user_flag.active_developer_val
     + user_flag.verified_developer_val
 
   // When
-  let flags = user_flag.from_int(flag_values)
+  let flags = user_flag.from_int(expected_flag_values)
   let result_values = user_flag.to_int(flags)
 
   // Then
-  result_values |> should.equal(flag_values)
+  result_values |> should.equal(expected_flag_values)
 }
 
 pub fn to_int_from_int_equals_test() {
   // Given
-  let flags = [
+  let expected_flags = [
     user_flag.ActiveDeveloper,
     user_flag.VerifiedDeveloper,
     user_flag.Staff,
   ]
 
   // When
-  let flag_values = user_flag.to_int(flags)
+  let flag_values = user_flag.to_int(expected_flags)
   let result_flags = user_flag.from_int(flag_values)
 
   // Then
-  flags
+  expected_flags
   |> list.all(fn(expected_flag) { result_flags |> list.contains(expected_flag) })
   |> should.be_true
 }
