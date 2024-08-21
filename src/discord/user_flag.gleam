@@ -2,7 +2,6 @@ import gleam/int
 import gleam/iterator
 import gleam/list
 import gleam/option.{type Option, None, Some}
-import gleam/result
 
 // 1 << 0
 pub const staff_val = 0b1
@@ -125,6 +124,5 @@ pub fn to_int(flags: List(UserFlag)) -> Int {
   }
 
   mapped_flags
-  |> list.reduce(fn(a, b) { a + b })
-  |> result.unwrap(0)
+  |> list.fold(0, fn(a, b) { a + b })
 }
