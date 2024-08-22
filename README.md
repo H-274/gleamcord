@@ -4,7 +4,7 @@
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/gleamcord/)
 
 > [!NOTE]
-> Currently, the focus of this library is towards Discord's HTTP API
+> Currently, the focus of this library is towards Discord's Gateway API
 
 This library aims to simplify communication with the [Discord API](https://discord.com/developers/docs/intro)
 by providing ready-to-use entities to recieve and send data to the API. It also comes with some extra useful type for convenience.
@@ -29,7 +29,7 @@ Further documentation can be found at <https://hexdocs.pm/gleamcord>.
 
 ## Goals
 - [ ] Create entities
-  - This is a large task, it may remain partially completed for some time if I decide to focus on other parts of the project
+  - This is a large task, and it may remain partially completed for some time if I decide to focus on other parts of the project
 - [ ] Create handler helpers
   - Things like a `Bot` type to contain the token, the registered commands, etc.
 - [ ] Create Discord Response Endpoints
