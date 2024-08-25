@@ -3,9 +3,6 @@
 [![Package Version](https://img.shields.io/hexpm/v/gleamcord)](https://hex.pm/packages/gleamcord)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/gleamcord/)
 
-> [!NOTE]
-> Currently, the focus of this library is towards Discord's Gateway API
-
 This library aims to simplify communication with the [Discord API](https://discord.com/developers/docs/intro)
 by providing ready-to-use entities to recieve and send data to the API. It also comes with some extra useful type for convenience.
 
