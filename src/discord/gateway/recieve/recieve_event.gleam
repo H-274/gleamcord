@@ -6,14 +6,18 @@ import discord/gateway/recieve/thread_list_sync_data.{type ThreadListSyncData}
 import discord/gateway/recieve/thread_members_update_data.{
   type ThreadMembersUpdateData,
 }
+import discord/guild.{type Guild}
 
 // TODO: 
 pub type RecieveEvent {
+  // --- Base ---
   Hello(HelloData)
   Ready(ReadyData)
   Resumed(Nil)
   Reconnect(Nil)
   InvalidSession(Bool)
+  // --- Automod ---
+  // TODO
   // --- Channel ---
   ChannelCreate(Channel)
   ChannelUpdate(Channel)
@@ -24,4 +28,16 @@ pub type RecieveEvent {
   ThreadMembersUpdate(ThreadMembersUpdateData)
   // --- Guild ---
   GuildCreate(GuildCreateData)
+  GuildUpdate(Guild)
+  GuildDelete(Guild)
+  // --- Ban ---
+  // TODO
+  // --- Member ---
+  // TODO
+  // --- Interaction ---
+  // TODO
+  // --- Message ---
+  // TODO
+  // --- User ---
+  // TODO
 }
