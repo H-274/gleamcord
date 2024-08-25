@@ -24,8 +24,11 @@ pub fn iso8601_string_decoder_fail_test() {
   // Given
   let iso8601_string = dynamic.from("10:10:00")
 
-  // When, Then
-  time_util.iso8601_string_decoder()
-  |> decode.from(iso8601_string)
-  |> should.be_error
+  // When
+  let time =
+    time_util.iso8601_string_decoder()
+    |> decode.from(iso8601_string)
+
+  // Then
+  time |> should.be_error
 }
