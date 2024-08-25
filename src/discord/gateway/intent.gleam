@@ -88,9 +88,10 @@ pub type Intent {
 }
 
 pub fn to_int(intents: List(Intent)) -> Int {
-  intents
-  |> list.map(fn(intent) {
-    case intent {
+  {
+    use flag <- fn(a) { list.unique(intents) |> list.map(a) }
+
+    case flag {
       Guild -> guild_val
       GuildMembers -> guild_members_val
       GuildModeration -> guild_moderation_val
@@ -113,6 +114,6 @@ pub fn to_int(intents: List(Intent)) -> Int {
       GuildMessagePolls -> guild_message_polls_val
       DirectMessagePolls -> direct_message_polls_val
     }
-  })
+  }
   |> list.fold(0, fn(a, b) { a + b })
 }
