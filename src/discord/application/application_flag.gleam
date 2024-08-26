@@ -81,9 +81,10 @@ pub fn from_int(val: Int) -> List(ApplicationFlag) {
 
 pub fn to_int(flags: List(ApplicationFlag)) -> Int {
   {
-    use intent <- list.map(flags)
+    use acc, intent <- list.fold(over: flags, from: 0)
 
-    case intent {
+    // Could simplify if we can eventually use dictionaries in constants?
+    let intent_val = case intent {
       ApplicationAutoModerationRuleCreateBadge ->
         application_auto_moderation_rule_create_badge.1
       GatewayPresence -> gateway_presence.1
@@ -96,6 +97,7 @@ pub fn to_int(flags: List(ApplicationFlag)) -> Int {
       GatewayMessageContentLimited -> gateway_message_content_limited.1
       ApplicationCommandBadge -> application_command_badge.1
     }
+
+    acc + intent_val
   }
-  |> list.fold(0, fn(a, b) { a + b })
 }
