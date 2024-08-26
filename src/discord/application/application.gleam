@@ -11,6 +11,7 @@ import discord/user.{type User}
 import gleam/dict.{type Dict}
 import gleam/option.{type Option}
 
+/// https://discord.com/developers/docs/resources/application#application-object-application-structure
 pub type Appliction {
   Application(
     id: Snowflake,

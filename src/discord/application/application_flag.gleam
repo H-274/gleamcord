@@ -46,6 +46,7 @@ pub const flag_tuple_list = [
   gateway_message_content_limited, application_command_badge,
 ]
 
+/// https://discord.com/developers/docs/resources/application#application-object-application-flags
 pub type ApplicationFlag {
   // 1 << 6
   ApplicationAutoModerationRuleCreateBadge
