@@ -3,7 +3,10 @@
 [![Package Version](https://img.shields.io/hexpm/v/gleamcord)](https://hex.pm/packages/gleamcord)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-ffaff3)](https://hexdocs.pm/gleamcord/)
 
-This library aims to simplify communication with the [Discord API](https://discord.com/developers/docs/intro)
+> [!WARNING]
+> This library is very early in development. The entities aren't done and the helper classes aren't done either
+
+This library aims to simplify communication with the [Discord API](https://discord.com/developers/docs/intro) using Gleam
 by providing ready-to-use entities to recieve and send data to the API. It also comes with some extra useful type for convenience.
 
 > [!IMPORTANT]
