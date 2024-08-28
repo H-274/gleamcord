@@ -4,10 +4,10 @@ import discord/application/integration_type.{type ApplicationIntegrationType}
 import discord/application/integration_type_configuration.{
   type ApplicationIntegrationTypeConfiguration,
 }
-import discord/guild.{type Guild}
+import discord/guild/guild.{type Guild}
 import discord/snowflake.{type Snowflake}
-import discord/team.{type Team}
-import discord/user.{type User}
+import discord/team/team.{type Team}
+import discord/user/user.{type User}
 import gleam/dict.{type Dict}
 import gleam/option.{type Option}
 
