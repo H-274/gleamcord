@@ -1,0 +1,30 @@
+/// https://discord.com/developers/docs/resources/guild#guild-object-guild-features
+pub type GuildFeature {
+  AnimatedBanner
+  AnimatedIcon
+  ApplicationCommandPermissionsV2
+  AutoModeration
+  Banner
+  Community
+  CreatorMonetizableProvisional
+  CreatorStorePage
+  DeveloperSupportServer
+  Discoverable
+  Featurable
+  InvitesDisabled
+  InviteSplash
+  MemberVerificationGateEnabled
+  MoreStickers
+  News
+  Partenered
+  PreviewEnabled
+  RaidAlertsDisabled
+  RoleIcons
+  RoleSubscriptionsAvailableForPurchase
+  RoleSubscriptionsEnabled
+  TicketedEventsEnabled
+  VanityUrl
+  Verified
+  VipRegions
+  WelcomeScreenEnabled
+}
