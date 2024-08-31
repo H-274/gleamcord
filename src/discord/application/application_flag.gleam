@@ -69,24 +69,22 @@ pub fn from_int(val: Int) -> List(ApplicationFlag) {
 }
 
 pub fn to_int(flags: List(ApplicationFlag)) -> Int {
-  {
-    use acc, intent <- list.fold(over: flags, from: 0)
+  use acc, intent <- list.fold(flags, 0)
 
-    // Could simplify if we can eventually use dictionaries in constants?
-    let intent_shift = case intent {
-      ApplicationAutoModerationRuleCreateBadge ->
-        application_auto_moderation_rule_create_badge.1
-      GatewayPresence -> gateway_presence.1
-      GatewayPresenceLimited -> gateway_presence_limited.1
-      GatewayGuildMembers -> gateway_guild_members.1
-      GatewayGuildMembersLimited -> gateway_guild_members_limited.1
-      VerificationPendingGuildLimit -> verification_pending_guild_limit.1
-      Embedded -> embedded.1
-      GatewayMessageContent -> gateway_message_content.1
-      GatewayMessageContentLimited -> gateway_message_content_limited.1
-      ApplicationCommandBadge -> application_command_badge.1
-    }
-
-    acc + int.bitwise_shift_left(1, intent_shift)
+  // Could simplify if we can eventually use dictionaries in constants?
+  let intent_shift = case intent {
+    ApplicationAutoModerationRuleCreateBadge ->
+      application_auto_moderation_rule_create_badge.1
+    GatewayPresence -> gateway_presence.1
+    GatewayPresenceLimited -> gateway_presence_limited.1
+    GatewayGuildMembers -> gateway_guild_members.1
+    GatewayGuildMembersLimited -> gateway_guild_members_limited.1
+    VerificationPendingGuildLimit -> verification_pending_guild_limit.1
+    Embedded -> embedded.1
+    GatewayMessageContent -> gateway_message_content.1
+    GatewayMessageContentLimited -> gateway_message_content_limited.1
+    ApplicationCommandBadge -> application_command_badge.1
   }
+
+  acc + int.bitwise_shift_left(1, intent_shift)
 }
