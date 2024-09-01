@@ -3,7 +3,7 @@ import discord/api/interactions/message_components/message_component.{
   type MessageComponent,
 }
 import discord/api/interactions/message_interaction.{type MessageInteraction}
-import discord/api/interactions/resolved_data.{type ResolvedData}
+import discord/api/interactions/resolved/resolved_data.{type ResolvedData}
 import discord/application/application.{type Application}
 import discord/channel/channel.{type Channel}
 import discord/message/attachement.{type Attachment}
