@@ -12,7 +12,7 @@ import gleam/dict.{type Dict}
 import gleam/option.{type Option}
 
 /// https://discord.com/developers/docs/resources/application#application-object-application-structure
-pub type Appliction {
+pub type Application {
   Application(
     id: Snowflake,
     name: String,
